@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Вязание на заказ</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <div class="page-header__top">
+          <a href="index.html" class="logo">
+            <img src="" alt="logo" class="logo__img">
+          </a>
+
+          <nav class="main-nav">
+            <button class="btn btn--humburger"></button>
+
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="catalog.html" class="nav-list__link ">Каталог товаров</a>
+              </li>
+
+              <li class="nav-list__item">
+                <a class="nav-list__link  nav-list__link--active">Вязание на&nbsp;заказ</a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Поиск по&nbsp;сайту</a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </nav>
+        </div>  <!-- end page-header__top  -->
+
+        <h2 class="page-title">Вязание на&nbsp;заказ</h2>
+      </header>
+
+      <main class="main">
+        <section class="callback">
+          <p class="callback__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
+          <form class="callback-form" action="" method="post">
+            <fieldset class="callback-form__group">
+              <legend class="callback-form__title">Тип</legend>
+
+              <label class="callback-form__radio  radio">
+                <input type="radio" name="type" class="radio__input" value="accessory">
+                <span class="radio__text">Аксессуар для&nbsp;интерьера</span>
+              </label>
+
+              <label class="callback-form__radio  radio">
+                <input type="radio" name="type" class="radio__input" value="toy">
+                <span class="radio__text">Детская игрушка</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="callback-form__group">
+              <legend class="callback-form__title">Цвет</legend>
+
+              <label class="callback-form__checkbox  checkbox">
+                <input type="checkbox" name="color" class="checkbox__input" value="white" checked>
+                <span class="checkbox__text">Белый</span>
+              </label>
+
+              <label class="callback-form__checkbox  checkbox">
+                <input type="checkbox" name="color" class="checkbox__input" value="grey" checked>
+                <span class="checkbox__text">Серый</span>
+              </label>
+
+              <label class="callback-form__checkbox  checkbox">
+                <input type="checkbox" name="color" class="checkbox__input" value="tiffany">
+                <span class="checkbox__text">«Тиффани»</span>
+              </label>
+
+              <label class="callback-form__checkbox  checkbox">
+                <input type="checkbox" name="color" class="checkbox__input" value="black">
+                <span class="checkbox__text">Черный</span>
+              </label>
+
+              <label class="callback-form__checkbox  checkbox">
+                <input type="checkbox" name="color" class="checkbox__input" value="pink">
+                <span class="checkbox__text">Розовый</span>
+              </label>
+
+              <label class="callback-form__checkbox  checkbox">
+                <input type="checkbox" name="color" class="checkbox__input" value="orange">
+                <span class="checkbox__text">Оранжевый</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="callback-form__group">
+              <legend class="callback-form__title">ФИО</legend>
+
+              <label class="callback-form__full-name  input">
+                <span class="input__title">Имя:</span>
+                <input type="text" name="first-name" class="input__control" placeholder="Введите ваше имя">
+              </label>
+
+              <label class="callback-form__full-name  input">
+                <span class="input__title">Фамилия:</span>
+                <input type="text" name="last-name" class="input__control" placeholder="Укажите фамилию">
+              </label>
+
+              <label class="callback-form__full-name  input">
+                <span class="input__title">Отчество:</span>
+                <input type="text" name="second-name" class="input__control" placeholder="Отчество, если желаете">
+              </label>
+            </fieldset>
+
+            <fieldset class="callback-form__group">
+              <legend class="callback-form__title">Тел</legend>
+
+              <label class="callback-form__tel-label input">
+                <input type="tel" name="telephone" class="input__control" placeholder="+7 XXX XX XX">
+              </label>
+            </fieldset>
+
+            <fieldset class="callback-form__group">
+              <legend class="callback-form__title">E-mail</legend>
+
+              <label  class="callback-form__email-label  input">
+                <input type="email" name="email" class="input__control" placeholder="Ваш Email">
+              </label>
+            </fieldset>
+
+            <fieldset class="callback-form__group">
+              <legend class="callback-form__title">Доп</legend>
+
+              <textarea class="textarea" name="additional" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+            <p class="callback-form__postscript">Все поля обязательны для&nbsp;заполения</p>
+            <button class="callback-form__button  btn">Отправить заказ</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <section class="social">
+          <a href="#" class="social__link  icon  icon--instagram">Инстаграм</a>
+          <a href="#" class="social__link  icon  icon--faceboock">Фейсбук</a>
+          <a href="#" class="social__link  icon  icon--twitter">Твиттер</a>
+        </section>
+
+        <section class="copyright">
+          <b class="copyright__text">Разработано</b>
+          <a href="#" class="copyright__link">HTML Academy</a>
+        </section>
+      </footer>
+    </div> <!-- end container  -->
+  </body>
+</html>
