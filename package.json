@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/htmlacademy-adaptive/169035-mishka",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.0.7",
+    "@htmlacademy/editorconfig-cli": "0.0.8",
     "autoprefixer": "6.4.1",
     "browser-sync": "2.15.0",
     "gulp": "3.9.1",
