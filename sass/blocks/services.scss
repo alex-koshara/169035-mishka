@@ -1,0 +1,12 @@
+.services {
+  display: none;
+  text-align: right;
+
+  @include font(15px, 24px);
+  color: $text-primary;
+
+  @media #{$min-width-tablet} {
+    display: block;
+    padding-top: 20px;
+  }
+}

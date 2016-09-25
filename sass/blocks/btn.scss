@@ -4,6 +4,7 @@
   display: block;
 
   width: 260px;
+  margin: 0 auto;
   padding: 16px;
 
   cursor: pointer;
@@ -26,5 +27,40 @@
   }
   &:active {
     color: $white-30;
+  }
+  &.btn--small {
+    width: 192px;
+    margin: 0 auto;
+
+    @media #{$min-width-tablet} {
+      width: 585px;
+    }
+    @media #{$min-width-desktop} {
+      width: 230px;
+      margin-left: 80px;
+    }
+  }
+  &.btn--form {
+    @media #{$min-width-tablet} {
+      order: -1;
+      margin: 0;
+      width: 230px;
+    }
+  }
+  &.btn--presentation {
+    width: 100%;
+  }
+  &.btn--popup {
+    @media #{$min-width-tablet} {
+      width: 350px;
+    }
+  }
+  &.btn--contacts {
+    @media #{$min-width-tablet} {
+      width: 230px;
+    }
+    @media #{$min-width-desktop} {
+      margin-left: 225px;
+    }
   }
 }

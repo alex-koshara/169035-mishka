@@ -1,3 +1,11 @@
 .logo {
   text-decoration: none;
 }
+
+.logo--undecor {
+  display: none;
+
+  @media #{$min-width-tablet} {
+    display: block;
+  }
+}

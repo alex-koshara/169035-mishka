@@ -1,29 +1,126 @@
+.presentation {
+  padding-bottom: 35px;
+  @media #{$min-width-tablet} {
+    min-height: 530px;
+  }
+  @media #{$min-width-desktop} {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    min-height: 750px;
+  }
+}
+
+.presentation__top {
+  @media #{$min-width-tablet} {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 51px;
+  }
+  @media #{$min-width-desktop} {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 45px;
+  }
+}
+
 .presentation__title {
   font-weight: bold;
+  z-index: 2;
+  margin: 0;
+  margin-bottom: 5px;
 
   @include font(25px, 30px);
+  @media #{$min-width-tablet} {
+    @include font(43px, 50px);
+    margin-bottom: 0;
+  }
+  @media #{$min-width-desktop} {
+    @include font(53px, 57px);
+  }
 }
 
 .presentation__text {
   font-weight: bold;
+  display: block;
+  margin-bottom: 25px;
 
   text-transform: uppercase;
 
   color: $aqua;
 
   @include font(17px, 16px);
+  @media #{$min-width-tablet} {
+    width: 120px;
+    margin: 0;
+    text-align: center;
+    padding-top: 13px;
+  }
+  @media #{$min-width-desktop} {
+    width: 175px;
+    padding: 13px 35px 13px 25px;
+  }
+}
+
+.presentation__content {
+  @media #{$min-width-tablet} {
+    position: relative;
+    padding-right: 375px;
+  }
+  @media #{$min-width-desktop} {
+    padding-right: 580px;
+    padding-left: 175px;
+  }
 }
 
 .presentation__description {
   color: $text-secondary;
+  margin-bottom: 27px;
 
   @include font(15px, 24px);
+  @media #{$min-width-tablet} {
+    @include font(17px, 30px);
+    margin-bottom: 42px;
+  }
+  @media #{$min-width-desktop} {
+    margin-top: 0;
+    margin-bottom: 57px;
+  }
+}
+
+.presentation__img {
+  margin-bottom: 25px;
+
+  background: $light-grey;
+  @media #{$min-width-tablet} {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 334px;
+    height: 404px;
+  }
+  @media #{$min-width-desktop} {
+    width: 525px;
+    height: 635px;
+    top: -159px;
+    z-index: 0;
+  }
 }
 
 .presentation__price {
   font-weight: bold;
 
+  display: block;
+
+  margin-bottom: 25px;
+
+  text-align: center;
+
   color: $text-secondary;
 
   @include font(17px, 24px);
+  @media #{$min-width-tablet} {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
 }

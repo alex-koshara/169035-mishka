@@ -1,5 +1,40 @@
+.contacts {
+  padding-top: 40px;
+  position: relative;
+  padding-bottom: 40px;
+  @media #{$min-width-tablet} {
+    padding-top: 69px;
+  }
+  @media #{$min-width-desktop} {
+  }
+}
+
+.contacts__wrapper {
+  @media #{$min-width-desktop} {
+    padding: 73px 525px 0 175px;
+  }
+}
+
 .contacts__title {
   font-weight: bold;
+  margin: 0;
+  margin-bottom: 26px;
 
   @include font(18px, 30px);
+  @media #{$min-width-tablet} {
+    @include font(43px, 50px);
+    margin-bottom: 47px;
+  }
+  @media #{$min-width-desktop} {
+    @include font(53px, 57px);
+  }
+}
+
+.contacts__wrap {
+  @media #{$min-width-desktop} {
+    position: relative;
+    width: 1150px;
+    margin: auto;
+    padding-right: 575px;
+  }
 }

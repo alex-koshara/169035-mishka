@@ -1,7 +1,49 @@
 .page-title {
   font-weight: bold;
 
-  background: $grey;
+  display: flex;
 
+  min-height: 175px;
+  margin: 0;
+  padding-bottom: 3px;
+
+  justify-content: center;
+  align-items: center;
   @include font(27px, 30px);
+  @media #{$min-width-tablet} {
+    min-height: 0;
+    padding: 53px 120px 75px 151px;
+
+    @include font(43px, 50px);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  @media #{$min-width-desktop} {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 295px;
+
+    @include font(53px, 57px);
+  }
+  &.page-title--form {
+    @media #{$min-width-tablet} {
+      padding-left: 140px;
+      padding-top: 50px;
+    }
+    @media #{$min-width-desktop} {
+      padding-left: 285px;
+    }
+  }
+  &.page-title--img {
+    padding-bottom: 51px;
+    min-height: 283px;
+    text-align: center;
+    @media #{$min-width-tablet} {
+      padding: 110px 70px 75px 69px;
+      margin-bottom: 300px;
+    }
+    @media #{$min-width-desktop} {
+      margin-bottom: 285px;
+    }
+  }
 }

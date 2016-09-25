@@ -1,7 +1,30 @@
 .characteristics {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+
   list-style: none;
 
   color: $text-secondary;
 
   @include font(15px, 20px);
+  @media #{$min-width-tablet} {
+    margin-bottom: 56px;
+  }
+  @media #{$min-width-desktop} {
+    margin-bottom: 109px;
+  }
+}
+
+.characteristics__item {
+  display: flex;
+
+  padding-bottom: 10px;
+  margin-bottom: 9px;
+
+  border-bottom: 1px solid $grey;
+}
+
+.characteristics__title {
+  width: 98px;
 }

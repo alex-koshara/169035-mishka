@@ -2,8 +2,16 @@
   font-weight: bold;
 
   display: flex;
+  align-items: flex-start;
 
   margin-bottom: 21px;
+  @media #{$min-width-tablet} {
+    margin-bottom: 24px;
+  }
+  @media #{$min-width-desktop} {
+    width: 30%;
+    margin-right: 2px;
+  }
 }
 
 .checkbox__icon {
@@ -20,6 +28,12 @@
   border: 2px solid $secondary-color;
 
   flex-shrink: 0;
+
+  @media #{$min-width-tablet} {
+    width: 54px;
+    height: 52px;
+    margin-right: 25px;
+  }
 }
 
 .checkbox__input {
@@ -34,6 +48,10 @@
   cursor: pointer;
 
   @include font(17px, 18px);
+  @media #{$min-width-tablet} {
+    font-size: 19px;
+    padding: 14px 0;
+  }
 }
 
 .checkbox__input:checked ~ .checkbox__icon {
@@ -53,6 +71,12 @@
 
     border-top: 2px solid $primary-color;
     border-right: 2px solid $primary-color;
+    @media #{$min-width-tablet} {
+      top: 12px;
+      left: 10px;
+      width: 29px;
+      height: 13px;
+    }
   }
 }
 

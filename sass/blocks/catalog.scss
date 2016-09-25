@@ -1,0 +1,16 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$min-width-desktop} {
+    flex-direction: row;
+    margin-left: -50px;
+    flex-wrap: wrap;
+  }
+}
+
+.catalog__item {
+  @media #{$min-width-desktop} {
+    margin-left: 50px;
+  }
+}
