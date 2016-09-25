@@ -1,0 +1,13 @@
+.modal-popup__title {
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  @include font(25px, 30px);
+}
+
+.modal-popup__text {
+  color: $text-secondary;
+
+  @include font(15px, 30px);
+}

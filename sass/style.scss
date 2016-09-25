@@ -1,0 +1,65 @@
+@import "normalize"; // нормалайз
+@import "variables"; // переменные
+
+
+// GLOBAL
+@import "global/fonts";
+@import "global/global";
+@import "global/mixins";
+
+
+// LAYOUT
+@import "layout/page-header";
+@import "layout/main";
+@import "layout/page-footer";
+
+
+// BLOCKS
+// A
+@import "blocks/about";
+// B
+@import "blocks/btn";
+// C
+@import "blocks/callback";
+@import "blocks/callback-form";
+@import "blocks/catalog";
+
+@import "blocks/characteristics";
+@import "blocks/checkbox";
+@import "blocks/communication";
+
+@import "blocks/contacts";
+@import "blocks/controls";
+@import "blocks/copyright";
+
+@import "blocks/container";
+// H
+@import "blocks/hamburger";
+// I
+@import "blocks/icon";
+@import "blocks/input";
+// L
+@import "blocks/logo";
+// M
+@import "blocks/main-nav";
+@import "blocks/menu";
+@import "blocks/modal-popup";
+// N
+@import "blocks/nav-list";
+// P
+@import "blocks/page-title";
+@import "blocks/presentation";
+@import "blocks/process";
+
+@import "blocks/product";
+@import "blocks/product-form";
+@import "blocks/product-size";
+// R
+@import "blocks/radio";
+@import "blocks/reviews";
+// S
+@import "blocks/social";
+// T
+@import "blocks/textarea";
+// U
+@import "blocks/user";

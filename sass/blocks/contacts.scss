@@ -1,0 +1,5 @@
+.contacts__title {
+  font-weight: bold;
+
+  @include font(18px, 30px);
+}

@@ -1,0 +1,19 @@
+.nav-list {
+  font-weight: bold;
+
+  list-style: none;
+
+  @include font(17px, 24px);
+}
+
+.nav-list__link {
+  text-decoration: none;
+
+  color: $text-primary;
+  &:hover {
+    color: $primary-color-60;
+  }
+  &:active {
+    color: $primary-color-30;
+  }
+}

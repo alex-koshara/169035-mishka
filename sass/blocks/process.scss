@@ -1,0 +1,11 @@
+.process__title {
+  font-weight: bold;
+
+  @include font(17px, 24px);
+}
+
+.process__description {
+  color: $text-secondary;
+
+  @include font(13px, 24px);
+}

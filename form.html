@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Вязание на заказ</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
@@ -13,7 +14,7 @@
           </a>
 
           <nav class="main-nav">
-            <button class="btn btn--humburger"></button>
+            <button class="hamburger"></button>
 
             <ul class="nav-list">
               <li class="nav-list__item">
@@ -46,12 +47,14 @@
               <legend class="callback-form__title">Тип</legend>
 
               <label class="callback-form__radio  radio">
-                <input type="radio" name="type" class="radio__input" value="accessory">
+                <input type="radio" name="type" class="radio__input" value="accessory" checked>
+                <i class="radio__icon"></i>
                 <span class="radio__text">Аксессуар для&nbsp;интерьера</span>
               </label>
 
               <label class="callback-form__radio  radio">
                 <input type="radio" name="type" class="radio__input" value="toy">
+                <i class="radio__icon"></i>
                 <span class="radio__text">Детская игрушка</span>
               </label>
             </fieldset>
@@ -61,31 +64,37 @@
 
               <label class="callback-form__checkbox  checkbox">
                 <input type="checkbox" name="color" class="checkbox__input" value="white" checked>
+                <i class="checkbox__icon"></i>
                 <span class="checkbox__text">Белый</span>
               </label>
 
               <label class="callback-form__checkbox  checkbox">
                 <input type="checkbox" name="color" class="checkbox__input" value="grey" checked>
+                <i class="checkbox__icon"></i>
                 <span class="checkbox__text">Серый</span>
               </label>
 
               <label class="callback-form__checkbox  checkbox">
                 <input type="checkbox" name="color" class="checkbox__input" value="tiffany">
+                <i class="checkbox__icon"></i>
                 <span class="checkbox__text">«Тиффани»</span>
               </label>
 
               <label class="callback-form__checkbox  checkbox">
                 <input type="checkbox" name="color" class="checkbox__input" value="black">
+                <i class="checkbox__icon"></i>
                 <span class="checkbox__text">Черный</span>
               </label>
 
               <label class="callback-form__checkbox  checkbox">
                 <input type="checkbox" name="color" class="checkbox__input" value="pink">
+                <i class="checkbox__icon"></i>
                 <span class="checkbox__text">Розовый</span>
               </label>
 
               <label class="callback-form__checkbox  checkbox">
                 <input type="checkbox" name="color" class="checkbox__input" value="orange">
+                <i class="checkbox__icon"></i>
                 <span class="checkbox__text">Оранжевый</span>
               </label>
             </fieldset>

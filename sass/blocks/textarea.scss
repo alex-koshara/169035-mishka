@@ -1,0 +1,20 @@
+.textarea {
+  font-family: $font;
+
+  padding: 15px;
+
+  color: $text-secondary;
+  border: 2px solid $primary-color;
+  &::placeholder {
+    color: $secondary-color-30;
+    opacity: 1;
+  }
+  &:hover {
+    border-color: $aqua;
+  }
+  &:focus {
+    color: $text-secondary;
+    border-color: $aqua;
+    outline: none;
+  }
+}

@@ -1,0 +1,35 @@
+.input__title {
+  font-weight: bold;
+
+  @include font(17px, 18px);
+}
+
+.input__control {
+  font-family: $font;
+
+  padding: 5px 0 15px 0;
+
+  color: $text-secondary;
+  border: none;
+  border-bottom: 2px solid $primary-color;
+
+  @include font(17px, 21px);
+  &::placeholder {
+    transition: text-indent .3s linear;
+
+    opacity: .3;
+    color: $text-secondary;
+  }
+  &:hover {
+    border-color: $aqua;
+  }
+  &:focus {
+    color: $text-secondary;
+    border-color: $aqua;
+    outline: none;
+    &::placeholder {
+      transition: text-indent .3s linear;
+      text-indent: 500px;
+    }
+  }
+}

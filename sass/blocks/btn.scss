@@ -1,0 +1,30 @@
+.btn {
+  font-weight: bold;
+
+  display: block;
+
+  width: 260px;
+  padding: 16px;
+
+  cursor: pointer;
+  transition: all .2s linear;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: $text-secondary;
+  border: 2px solid currentcolor;
+  background: none;
+
+  @include font(17px, 16px);
+  &:hover,
+  &:focus {
+    color: $white;
+    border-color: $secondary-color;
+    outline: none;
+    background: $secondary-color;
+  }
+  &:active {
+    color: $white-30;
+  }
+}

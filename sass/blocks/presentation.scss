@@ -1,0 +1,29 @@
+.presentation__title {
+  font-weight: bold;
+
+  @include font(25px, 30px);
+}
+
+.presentation__text {
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  color: $aqua;
+
+  @include font(17px, 16px);
+}
+
+.presentation__description {
+  color: $text-secondary;
+
+  @include font(15px, 24px);
+}
+
+.presentation__price {
+  font-weight: bold;
+
+  color: $text-secondary;
+
+  @include font(17px, 24px);
+}
