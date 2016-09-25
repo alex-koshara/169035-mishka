@@ -1,0 +1,27 @@
+.product-size__input {
+  display: none;
+}
+
+.product-size__text {
+  font-weight: bold;
+
+  display: block;
+
+  width: 82px;
+  padding: 15px;
+
+  cursor: pointer;
+  text-align: center;
+
+  color: $text-secondary;
+  border: 2px solid $primary-color-30;
+
+  @include font(17px, 16px);
+  &:hover {
+    border-color: $primary-color-60;
+  }
+}
+
+.product-size__input:checked ~ .product-size__text {
+  border-color: $aqua;
+}

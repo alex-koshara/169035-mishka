@@ -1,0 +1,23 @@
+.product__link {
+  text-decoration: none;
+}
+
+.product__title {
+  font-weight: bold;
+
+  color: $text-primary;
+
+  @include font(17px, 24px);
+}
+
+.product__description {
+  color: $text-secondary;
+
+  @include font(13px, 30px);
+}
+
+.product__price {
+  font-weight: bold;
+
+  @include font(15px, 24px);
+}

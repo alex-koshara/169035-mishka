@@ -1,0 +1,7 @@
+.page-title {
+  font-weight: bold;
+
+  background: $grey;
+
+  @include font(27px, 30px);
+}

@@ -1,0 +1,15 @@
+.callback-form__postscript {
+  color: $text-secondary;
+
+  @include font(14px, 18px);
+}
+
+.callback-form__title {
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  color: $aqua;
+
+  @include font(17px, 16px);
+}

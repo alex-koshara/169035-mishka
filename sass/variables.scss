@@ -1,0 +1,25 @@
+// color
+$black: #000;
+$black-60: rgba($black, .6);
+$black-30: rgba($black, .3);
+$white: #fff;
+$white-30: rgba($white, .3);
+$brown: #444;
+$brown-30: rgba($brown, .3);
+$aqua: #63d1ba;
+$aqua-light: #56c3b2;
+$grey: #f1f1f1;
+
+// GLOBAL
+$primary-color: $black;
+$primary-color-60: $black-60;
+$primary-color-30: $black-30;
+
+$secondary-color: $brown;
+$secondary-color-30: $brown-30;
+
+$font: opensans, Arial, sans-serif;
+
+// TEXT COLOR
+$text-primary: $primary-color;
+$text-secondary: $secondary-color;

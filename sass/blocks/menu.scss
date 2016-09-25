@@ -1,0 +1,22 @@
+.menu {
+  font-weight: bold;
+
+  @include font(19px, 24px);
+}
+
+.menu__link {
+  display: block;
+
+  text-decoration: none;
+
+  color: $white;
+  &:active {
+    color: $white-30;
+  }
+  &--aqua {
+    background: $aqua;
+  }
+  &--light-aqua {
+    background: $aqua-light;
+  }
+}
