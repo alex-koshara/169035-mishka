@@ -4,6 +4,7 @@ $black-60: rgba($black, .6);
 $black-30: rgba($black, .3);
 $white: #fff;
 $white-30: rgba($white, .3);
+$white-90: rgba($white, .9);
 $brown: #444;
 $brown-30: rgba($brown, .3);
 $aqua: #63d1ba;
@@ -11,14 +12,18 @@ $aqua-light: #56c3b2;
 $grey: #f1f1f1;
 $light-grey: #ececec;
 $dark-grey: #e5e5e5;
+$index-header-bg: #fafafa;
+$header-gradient: linear-gradient(0deg, rgb(249, 249, 249) 0%, rgb(251, 251, 251) 100%);
 
 // WIDTH
 $desktop: 1150px;
 $tablet: 768px;
+$mobile-only: 767px;
 
 // @MEDIA
 $min-width-tablet: "(min-width: $tablet)";
 $min-width-desktop: "(min-width: $desktop)";
+$mobile-width-only: "(max-width: $mobile-only)";
 
 // GLOBAL
 $primary-color: $black;

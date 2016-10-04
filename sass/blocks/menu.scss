@@ -3,10 +3,12 @@
 
   @include font(19px, 24px);
   @media #{$min-width-tablet} {
-    @include font(20px, 30px);
     display: flex;
+
     width: 668px;
     margin: auto;
+
+    @include font(20px, 30px);
   }
   @media #{$min-width-desktop} {
     width: 1050px;
@@ -14,7 +16,10 @@
 }
 
 .menu__link {
+  position: relative;
+
   display: block;
+
   padding: 24px 130px 30px 30px;
 
   text-decoration: none;
@@ -27,13 +32,24 @@
   @media #{$min-width-desktop} {
     padding: 27px 310px 30px 35px;
   }
+  &:hover {
+    transform: translateY(-5px);
+  }
   &:active {
     color: $white-30;
   }
   &--aqua {
     background: $aqua;
+    box-shadow: $aqua;
+    &:hover {
+      box-shadow: 0 5px $aqua;
+    }
   }
   &--light-aqua {
     background: $aqua-light;
+    box-shadow: $aqua-light;
+    &:hover {
+      box-shadow: 0 5px $aqua-light;
+    }
   }
 }

@@ -1,12 +1,39 @@
 .services {
   display: none;
+
   text-align: right;
 
-  @include font(15px, 24px);
   color: $text-primary;
 
+  @include font(15px, 24px);
   @media #{$min-width-tablet} {
-    display: block;
-    padding-top: 20px;
+    display: inline;
+  }
+  @media #{$min-width-desktop} {
+    display: flex;
+
+    width: 100%;
+  }
+}
+
+.services__order {
+  display: none;
+
+  text-decoration: none;
+
+  color: $text-primary;
+  @media #{$min-width-desktop} {
+    font-weight: bold;
+
+    display: inline;
+
+    margin-right: 30px;
+    padding-right: 30px;
+  }
+}
+
+.services__text {
+  @media #{$min-width-desktop} {
+    margin-left: auto;
   }
 }
