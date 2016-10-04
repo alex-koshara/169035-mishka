@@ -17,6 +17,9 @@
   border: 2px solid $primary-color-30;
 
   @include font(17px, 16px);
+  @media #{$min-width-tablet} {
+    width: 112px;
+  }
   &:hover {
     border-color: $primary-color-60;
   }

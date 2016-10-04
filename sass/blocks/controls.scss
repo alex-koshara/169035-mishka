@@ -1,0 +1,14 @@
+.controls {
+  display: flex;
+  margin-bottom: 38px;
+  @media #{$min-width-tablet} {
+    width: 167px;
+  }
+}
+
+.controls__btn {
+  width: 50%;
+  border: 1px solid $grey;
+  height: 52px;
+  margin: auto;
+}

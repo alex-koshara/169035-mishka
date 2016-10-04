@@ -1,13 +1,19 @@
 .textarea {
   font-family: $font;
 
+  width: 100%;
   padding: 15px;
+  min-height: 142px;
 
   color: $text-secondary;
   border: 2px solid $primary-color;
+
+  @media #{$min-width-tablet} {
+    font-size: 19px;
+  }
   &::placeholder {
-    color: $secondary-color-30;
     opacity: 1;
+    color: $secondary-color-30;
   }
   &:hover {
     border-color: $aqua;

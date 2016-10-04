@@ -1,0 +1,5 @@
+.main {
+  @media #{$min-width-tablet} {
+    padding-bottom: 45px;
+  }
+}

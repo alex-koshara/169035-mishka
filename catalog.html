@@ -2,12 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Каталог товаров</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <header class="page-header">
+  <header class="page-header">
+    <div class="container">
       <div class="page-header__top">
         <a href="index.html" class="logo">
           <img src="" alt="logo" class="logo__img">
@@ -18,7 +19,7 @@
 
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a class="nav-list__link  nav-list__link--active">Каталог товаров</a>
+              <a class="nav-list__link  nav-list__link--active">Каталог товаров</a> <!-- товарищ проверяющий, здесь ошибка со шрифтом в макете. Прошу понять и простить -->
             </li>
 
             <li class="nav-list__item">
@@ -34,90 +35,119 @@
             </li>
           </ul>
         </nav>
-      </div>  <!-- end page-header__top  -->
+      </div>  <!-- end container  -->
+    </div>  <!-- end page-header__top  -->
 
-      <h2 class="page-title">Каталог товаров</h2>
-    </header>
+    <div class="page-header__bottom">
+      <div class="container">
+        <div class="services">
+          <span class="services__text">Бесплатная доставка по России</span>
+        </div>
+        <h2 class="page-title">Каталог товаров</h2>
+      </div>  <!-- end container  -->
+    </div>  <!-- end page-header__bottom  -->
 
-    <main class="main">
+  </header>
+
+  <main class="main">
+    <div class="container">
       <section class="catalog">
         <article class="catalog__item  product">
           <a href="#" class="product__link">
-            <img src="" alt="Зайчик-попрыгайчик" class="product__img">
-            <h3 class="product__title">Зайчик-попрыгайчик</h3>
+            <img src="" alt="Зайчик-попрыгайчик" class="product__img" width="260" height="195">
           </a>
 
-          <span class="product__description">Рост 30&nbsp;см, вес 200&nbsp;г</span>
-
           <div class="product__wrap">
-            <span class="product__price">1&nbsp;200 руб.</span>
-            <a href="#" class="product__link  icon  icon--basket"></a>
-          </div>
+            <a href="#" class="product__link">
+              <h3 class="product__title">Зайчик-попрыгайчик</h3>
+            </a>
+
+            <span class="product__description">Рост 30&nbsp;см, вес 200&nbsp;г</span>
+
+            <div class="product__wrap-inner">
+              <span class="product__price">1&nbsp;200 руб.</span>
+              <a href="#" class="product__link  icon  icon--basket"></a>
+            </div>  <!-- end product__wrap-inner -->
+          </div>  <!-- end product__wrap -->
         </article>
 
         <article class="catalog__item  product">
           <a href="#" class="product__link">
-            <img src="" alt="Корзинка для белья" class="product__img">
-            <h3 class="product__title">Корзинка для&nbsp;белья</h3>
+            <img src="" alt="Корзинка для белья" class="product__img" width="260" height="195">
           </a>
 
-          <span class="product__description">Диаметр 15&nbsp;см, высота 10&nbsp;см</span>
-
           <div class="product__wrap">
-            <span class="product__price">690 руб.</span>
-            <a href="#" class="product__link  icon  icon--basket"></a>
-          </div>
+            <a href="#" class="product__link">
+              <h3 class="product__title">Корзинка для&nbsp;белья</h3>
+            </a>
+
+            <span class="product__description">Диаметр 15&nbsp;см, высота 10&nbsp;см</span>
+
+            <div class="product__wrap-inner">
+              <span class="product__price">690 руб.</span>
+              <a href="#" class="product__link  icon  icon--basket"></a>
+            </div>  <!-- end product__wrap-inner -->
+          </div>  <!-- end product__wrap -->
         </article>
 
         <article class="catalog__item  product">
           <a href="#" class="product__link">
-            <img src="" alt="Корзинка для игрушек" class="product__img">
-            <h3 class="product__title">Большая корзинка для&nbsp;игрушек</h3>
+            <img src="" alt="Корзинка для игрушек" class="product__img" width="260" height="195">
           </a>
 
-          <span class="product__description">Диаметр 30&nbsp;см, высота 30&nbsp;см</span>
-
           <div class="product__wrap">
-            <span class="product__price">1&nbsp;500 руб.</span>
-            <a href="#" class="product__link  icon  icon--basket"></a>
-          </div>
+            <a href="#" class="product__link">
+              <h3 class="product__title">Большая корзинка для&nbsp;игрушек</h3>
+            </a>
+
+            <span class="product__description">Диаметр 30&nbsp;см, высота 30&nbsp;см</span>
+
+            <div class="product__wrap-inner">
+              <span class="product__price">1&nbsp;500 руб.</span>
+              <a href="#" class="product__link  icon  icon--basket">basket here</a>
+            </div>  <!-- end product__wrap-inner -->
+          </div>  <!-- end product__wrap -->
         </article>
       </section>
 
       <section class="process">
-        <div class="process__wrapper">
-          <h3 class="process__title  icon  icon--camera">Процесс производства</h3>
+        <h3 class="process__title  icon  icon--camera">Процесс производства</h3>
 
-          <div class="process__wrapper-inner">
-            <img src="" alt="Здесь должно быть видео! Но его нет и не будет!" class="process__video">
-          </div>
-
-          <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
-
-          <button type="button" class="btn">Сделать заказ</button>
+        <div class="process__wrapper-inner">
+          <img src="" alt="Здесь должно быть видео! Но его нет и не будет!" class="process__video" width="260" height="150">
         </div>
+
+        <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
+
+        <button type="button" class="btn btn--small">Сделать заказ</button>
       </section>
+    </div>  <!-- end container -->
+  </main>
 
-    </main>
-
-    <footer class="page-footer">
+  <footer class="page-footer">
+    <div class="page-footer__inner container">
+      <a href="index.html" class="logo logo--undecor">
+        <img src="" alt="logo" class="logo__img logo__img--undecor">
+      </a>
       <section class="social">
-        <a href="#" class="social__link  icon  icon--instagram">Инстаграм</a>
-        <a href="#" class="social__link  icon  icon--faceboock">Фейсбук</a>
-        <a href="#" class="social__link  icon  icon--twitter">Твиттер</a>
+        <a href="#" class="social__link  icon  icon--instagram">Ин</a>
+        <a href="#" class="social__link  icon  icon--faceboock">Фе</a>
+        <a href="#" class="social__link  icon  icon--twitter">Тв</a>
       </section>
 
       <section class="copyright">
         <b class="copyright__text">Разработано</b>
-        <a href="#" class="copyright__link">HTML Academy</a>
+        <a href="#" class="copyright__link">HT</a>
       </section>
-    </footer>
+    </div>  <!-- end page-footer__inner -->
+  </footer>
 
-    <section class="modal-popup">
-      <h3 class="modal-popup__title">Добавить в&nbsp;корзину</h3>
-      <span class="modal-popup__text">Выберите размер:</span>
+  <section class="modal-popup container">
+    <h3 class="modal-popup__title">Добавить в&nbsp;корзину</h3>
+    <span class="modal-popup__text">Выберите размер:</span>
 
-      <form method="POST" class="product-form">
+    <form method="POST" class="product-form">
+      <div class="product-form__inner">
         <label class="product-form__item  product-size">
           <input type="radio" name="size" class="product-size__input" value="size-s">
           <span class="product-size__text">S</span>
@@ -133,10 +163,9 @@
           <span class="product-size__text">L</span>
         </label>
 
-        <button type="submit" class="btn  btn--green product-form__btn">Добавить</button>
-      </form>
-
-    </section>
-  </div> <!-- end container  -->
+        <button type="submit" class="btn  btn--popup">Добавить</button>
+      </div>
+    </form>
+  </section>
 </body>
 </html>

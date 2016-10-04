@@ -1,0 +1,15 @@
+.map {
+  height: 457px;
+  background: $dark-grey;
+  margin-bottom: 45px;
+  @media #{$min-width-tablet} {
+    margin-bottom: 57px;
+  }
+  @media #{$min-width-desktop} {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 525px;
+    height: 457px;
+  }
+}

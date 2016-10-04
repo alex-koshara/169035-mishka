@@ -9,6 +9,16 @@ $brown-30: rgba($brown, .3);
 $aqua: #63d1ba;
 $aqua-light: #56c3b2;
 $grey: #f1f1f1;
+$light-grey: #ececec;
+$dark-grey: #e5e5e5;
+
+// WIDTH
+$desktop: 1150px;
+$tablet: 768px;
+
+// @MEDIA
+$min-width-tablet: "(min-width: $tablet)";
+$min-width-desktop: "(min-width: $desktop)";
 
 // GLOBAL
 $primary-color: $black;

@@ -3,9 +3,10 @@
 
 
 // GLOBAL
+@import "global/mixins";
+@import "global/container";
 @import "global/fonts";
 @import "global/global";
-@import "global/mixins";
 
 
 // LAYOUT
@@ -31,8 +32,6 @@
 @import "blocks/contacts";
 @import "blocks/controls";
 @import "blocks/copyright";
-
-@import "blocks/container";
 // H
 @import "blocks/hamburger";
 // I
@@ -44,6 +43,8 @@
 @import "blocks/main-nav";
 @import "blocks/menu";
 @import "blocks/modal-popup";
+
+@import "blocks/map";
 // N
 @import "blocks/nav-list";
 // P
@@ -58,6 +59,7 @@
 @import "blocks/radio";
 @import "blocks/reviews";
 // S
+@import "blocks/services";
 @import "blocks/social";
 // T
 @import "blocks/textarea";
