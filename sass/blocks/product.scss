@@ -58,6 +58,14 @@
   }
 }
 
+.product:hover .product__wrap {
+  box-shadow: 0 3px 8px $dark-grey;
+}
+
+.product:active .product__wrap {
+  box-shadow: 0 1px 5px $dark-grey;
+}
+
 .product__wrap {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,48 @@
+.user-list {
+  font-weight: bold;
+
+  background: $white;
+
+  @include font(17px, 24px);
+  @media #{$min-width-tablet} {
+    display: flex;
+  }
+}
+
+.user-list__link {
+  display: block;
+
+  padding: 25px 30px 29px 75px;
+
+  text-decoration: none;
+
+  color: $text-primary;
+  border-bottom: 1px solid $light-grey;
+  @media #{$min-width-tablet} {
+    border-bottom: none;
+    &.user-list__link--search {
+      font-size: 0;
+
+      width: 84px;
+      margin: 0;
+      padding: 30px 0;
+
+      border-right: 1px solid $light-grey;
+      border-left: 1px solid $light-grey;
+    }
+    &.user-list__link--basket {
+      width: 265px;
+      margin: 0;
+      padding: 30px 0;
+      padding-left: 65px;
+
+      text-align: right;
+    }
+  }
+  &:hover {
+    color: $primary-color-60;
+  }
+  &:active {
+    color: $primary-color-30;
+  }
+}

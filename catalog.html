@@ -8,41 +8,47 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="container">
-      <div class="page-header__top">
-        <a href="index.html" class="logo">
-          <img src="" alt="logo" class="logo__img">
-        </a>
+    <div class="page-header__top">
 
-        <nav class="main-nav">
-          <button class="hamburger"></button>
+      <nav class="main-nav">
+        <button type="button" class="hamburger  main_nav__open"  id="hamburger"></button>
 
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__link  nav-list__link--active">Каталог товаров</a> <!-- товарищ проверяющий, здесь ошибка со шрифтом в макете. Прошу понять и простить -->
-            </li>
+        <div class="main-nav__group main-nav__group--logo">
+          <a href="index.html" class="logo">
+            <img src="" alt="logo" class="logo__img">
+          </a>
+        </div>
 
-            <li class="nav-list__item">
-              <a href="form.html" class="nav-list__link">Вязание на&nbsp;заказ</a>
-            </li>
+        <div class="main-nav__group main-nav__group--common">
+          <section class="nav-list  nav-list--nojs">
+            <a class="nav-list__link  nav-list__link--active">Каталог товаров</a>
 
-            <li class="nav-list__item">
-              <a href="#" class="nav-list__link">Поиск по&nbsp;сайту</a>
-            </li>
+            <a href="form.html" class="nav-list__link">Вязание на&nbsp;заказ</a>
+          </section>
+        </div>
 
-            <li class="nav-list__item">
-              <a href="#" class="nav-list__link">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </nav>
-      </div>  <!-- end container  -->
+        <div class="main-nav__group main-nav__group--user">
+          <section class="user-list  user-list--nojs">
+            <a href="#" class="user-list__link  user-list__link--search">Поиск по&nbsp;сайту</a>
+
+            <a href="#" class="user-list__link  user-list__link--basket">Корзина: пока пуста</a>
+          </section>
+        </div>
+
+        <div class="main-nav__group main-nav__group--services">
+          <div class="services">
+            <a href="#" class="services__order">Новые поступления</a>
+
+            <a href="#" class="services__order">Распродажа</a>
+
+            <span class="services__text">Бесплатная доставка по России</span>
+          </div>
+        </div>
+      </nav>
     </div>  <!-- end page-header__top  -->
 
     <div class="page-header__bottom">
       <div class="container">
-        <div class="services">
-          <span class="services__text">Бесплатная доставка по России</span>
-        </div>
         <h2 class="page-title">Каталог товаров</h2>
       </div>  <!-- end container  -->
     </div>  <!-- end page-header__bottom  -->
@@ -119,7 +125,7 @@
 
         <p class="process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
 
-        <button type="button" class="btn btn--small">Сделать заказ</button>
+        <button type="button" id="buy" class="btn btn--small">Сделать заказ</button>
       </section>
     </div>  <!-- end container -->
   </main>
@@ -142,30 +148,33 @@
     </div>  <!-- end page-footer__inner -->
   </footer>
 
-  <section class="modal-popup container">
-    <h3 class="modal-popup__title">Добавить в&nbsp;корзину</h3>
-    <span class="modal-popup__text">Выберите размер:</span>
+  <section class="overlay  overlay--hidden">
+    <div class="modal-popup container">
+      <h3 class="modal-popup__title">Добавить в&nbsp;корзину</h3>
+      <span class="modal-popup__text">Выберите размер:</span>
 
-    <form method="POST" class="product-form">
-      <div class="product-form__inner">
-        <label class="product-form__item  product-size">
-          <input type="radio" name="size" class="product-size__input" value="size-s">
-          <span class="product-size__text">S</span>
-        </label>
+      <form method="POST" class="product-form">
+        <div class="product-form__inner">
+          <label class="product-form__item  product-size">
+            <input type="radio" name="size" class="product-size__input" value="size-s">
+            <span class="product-size__text">S</span>
+          </label>
 
-        <label class="product-form__item  product-size">
-          <input type="radio" name="size" class="product-size__input" value="size-m">
-          <span class="product-size__text">M</span>
-        </label>
+          <label class="product-form__item  product-size">
+            <input type="radio" name="size" class="product-size__input" value="size-m">
+            <span class="product-size__text">M</span>
+          </label>
 
-        <label class="product-form__item  product-size">
-          <input type="radio" name="size" class="product-size__input" value="size-l">
-          <span class="product-size__text">L</span>
-        </label>
+          <label class="product-form__item  product-size">
+            <input type="radio" name="size" class="product-size__input" value="size-l">
+            <span class="product-size__text">L</span>
+          </label>
 
-        <button type="submit" class="btn  btn--popup">Добавить</button>
-      </div>
-    </form>
+          <button type="submit" class="btn  btn--popup">Добавить</button>
+        </div>
+      </form>
+    </div>
   </section>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -51,6 +51,18 @@
     width: 100%;
   }
   &.btn--popup {
+    background: $aqua;
+    background-color: $aqua;
+    color: $white;
+    &:hover,
+    &:focus {
+      color: $aqua;
+      background: $white;
+      border-color: $aqua;
+    }
+    &:active {
+      color: $aqua-light;
+    }
     @media #{$min-width-tablet} {
       width: 350px;
     }

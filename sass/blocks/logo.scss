@@ -1,11 +1,14 @@
 .logo {
   text-decoration: none;
+  @media #{$min-width-tablet} {
+    display: flex;
+
+    width: 100%;
+  }
 }
 
 .logo--undecor {
-  display: none;
-
-  @media #{$min-width-tablet} {
-    display: block;
+  @media #{$mobile-width-only} {
+    display: none;
   }
 }

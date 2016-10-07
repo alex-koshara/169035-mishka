@@ -1,16 +1,15 @@
 .modal-popup {
   padding-bottom: 45px;
 
-  margin: 100px auto !important;  // временное свойство
-  box-shadow: 0 6px 5px $dark-grey;
-
   border-top: 1px solid $dark-grey;
   border-bottom: 1px solid $dark-grey;
-
+  background: $white;
+  box-shadow: 0 6px 5px $dark-grey;
   @media #{$min-width-tablet} {
-    border: 1px solid $dark-grey;
     width: 565px;
     margin: auto;
+
+    border: 1px solid $dark-grey;
   }
 }
 

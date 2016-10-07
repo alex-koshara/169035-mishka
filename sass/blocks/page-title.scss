@@ -27,23 +27,25 @@
   }
   &.page-title--form {
     @media #{$min-width-tablet} {
-      padding-left: 140px;
       padding-top: 50px;
+      padding-left: 140px;
     }
     @media #{$min-width-desktop} {
       padding-left: 285px;
     }
   }
   &.page-title--img {
-    padding-bottom: 51px;
     min-height: 283px;
+    padding-bottom: 51px;
+
     text-align: center;
     @media #{$min-width-tablet} {
-      padding: 110px 70px 75px 69px;
-      margin-bottom: 300px;
+      margin-bottom: 282px;
+      padding: 91px 70px 75px 69px;
     }
     @media #{$min-width-desktop} {
       margin-bottom: 285px;
+      padding-top: 93px;
     }
   }
 }
