@@ -1,6 +1,13 @@
 .page-footer {
-  background: $grey;
+  padding: 22px 0;
 
+  background: $grey;
+  @media #{$min-width-tablet} {
+    padding: 48px 0 11px;
+  }
+  @media #{$min-width-desktop} {
+    padding: 50px 0 14px;
+  }
 }
 
 .page-footer__inner {
@@ -8,6 +15,6 @@
     display: flex;
 
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 }

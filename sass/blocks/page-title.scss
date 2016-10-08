@@ -3,49 +3,61 @@
 
   display: flex;
 
-  min-height: 175px;
   margin: 0;
-  padding-bottom: 3px;
+  padding: 69px 0 76px;
 
   justify-content: center;
   align-items: center;
   @include font(27px, 30px);
   @media #{$min-width-tablet} {
     min-height: 0;
-    padding: 53px 120px 75px 151px;
+    padding: 35px 120px 75px 151px;
 
     @include font(43px, 50px);
     align-items: flex-start;
     justify-content: flex-start;
   }
   @media #{$min-width-desktop} {
-    padding-top: 50px;
-    padding-bottom: 100px;
-    padding-left: 295px;
+    padding: 33px 245px 100px 295px;
 
     @include font(53px, 57px);
   }
   &.page-title--form {
     @media #{$min-width-tablet} {
-      padding-top: 50px;
-      padding-left: 140px;
+      padding: 33px 120px 82px 140px;
     }
     @media #{$min-width-desktop} {
-      padding-left: 285px;
+      padding: 33px 120px 100px 285px;
     }
   }
   &.page-title--img {
-    min-height: 283px;
-    padding-bottom: 51px;
+    min-height: 281px;
+    padding-bottom: 53px;
 
     text-align: center;
+
+    background-image: url('../img/hero-mobile@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center -20px;
+    background-size: 575px auto;
+
+    align-items: flex-start;
+    @media #{$retina} {
+      background-image: url('../img/hero-mobile@2x.jpg');
+    }
     @media #{$min-width-tablet} {
-      margin-bottom: 282px;
-      padding: 91px 70px 75px 69px;
+      padding: 93px 70px 373px 69px;
+
+      background-image: url('../img/hero-desktop@1x.jpg');
+      background-position: center -61px;
+      background-size: 1150px auto;
+      @media #{$retina} {
+        background-image: url('../img/hero-desktop@2x.jpg');
+      }
     }
     @media #{$min-width-desktop} {
-      margin-bottom: 285px;
       padding-top: 93px;
+      padding-bottom: 359px;
     }
   }
 }

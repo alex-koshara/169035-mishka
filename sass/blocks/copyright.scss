@@ -1,14 +1,34 @@
 .copyright {
-  padding: 25px;
-  text-align: center;
+  display: flex;
+
+  padding-top: 8px;
+
+  text-decoration: none;
+
+  color: $text-primary;
+
+  justify-content: center;
+  align-items: flex-start;
+  &:hover {
+    color: $aqua;
+  }
+  &:active {
+    opacity: .3;
+  }
 }
 
 .copyright__text {
   font-weight: bold;
 
+  margin-right: 28px;
+  padding-top: 6px;
+
   @include font(19px, 18px);
+  &:hover {
+    color: $aqua;
+  }
 }
 
-.copyright__link {
-  text-decoration: none;
+.copyright__img {
+  padding-top: 9px;
 }

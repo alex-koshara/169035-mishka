@@ -14,7 +14,8 @@ $light-grey: #ececec;
 $dark-grey: #e5e5e5;
 $index-header-bg: #fafafa;
 $header-gradient: linear-gradient(0deg, rgb(249, 249, 249) 0%, rgb(251, 251, 251) 100%);
-
+$decoration-color: #35a999;
+$invalid-color: #f0b1b1;
 // WIDTH
 $desktop: 1150px;
 $tablet: 768px;
@@ -24,6 +25,7 @@ $mobile-only: 767px;
 $min-width-tablet: "(min-width: $tablet)";
 $min-width-desktop: "(min-width: $desktop)";
 $mobile-width-only: "(max-width: $mobile-only)";
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
 
 // GLOBAL
 $primary-color: $black;

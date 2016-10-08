@@ -1,5 +1,18 @@
 .main {
+  &.main--catalog {
+    margin-bottom: 56px;
+  }
   @media #{$min-width-tablet} {
+    padding-bottom: 17px;
+    &.main--catalog {
+      margin-bottom: 45px;
+    }
+  }
+  @media #{$min-width-desktop} {
+    margin-bottom: 20px;
     padding-bottom: 45px;
+    &.main--catalog {
+      margin-bottom: 60px;
+    }
   }
 }

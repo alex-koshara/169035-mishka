@@ -1,14 +1,33 @@
 .logo {
   text-decoration: none;
-  @media #{$min-width-tablet} {
-    display: flex;
-
-    width: 100%;
+  &:hover {
+    opacity: .6;
+  }
+  &:active {
+    opacity: .3;
+  }
+  &.logo--footer {
+    color: $text-primary;
+    @media #{$mobile-width-only} {
+      display: none;
+    }
+    &:hover {
+      opacity: 1;
+      color: $aqua;
+    }
+    &:active {
+      opacity: .3;
+    }
   }
 }
 
-.logo--undecor {
-  @media #{$mobile-width-only} {
-    display: none;
+.logo__img {
+  @media #{$min-width-tablet} {
+    width: 112px;
+    height: 46px;
+  }
+  @media #{$min-width-tablet} {
+    width: 148px;
+    height: 73px;
   }
 }

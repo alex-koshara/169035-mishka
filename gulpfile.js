@@ -6,6 +6,17 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
+
+gulp.task("symbols", function() {
+  return gulp.src("img/icons/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(gulp.dest("img"));
+});
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")

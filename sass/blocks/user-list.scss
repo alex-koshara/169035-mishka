@@ -10,6 +10,8 @@
 }
 
 .user-list__link {
+  position: relative;
+
   display: block;
 
   padding: 25px 30px 29px 75px;
@@ -45,4 +47,30 @@
   &:active {
     color: $primary-color-30;
   }
+}
+
+.user-list__link .icon {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+
+  transform: translateY(-50%);
+
+  opacity: .2;
+  &:hover {
+    opacity: 1;
+    color: $aqua;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.user-list__link:hover .icon {
+  opacity: 1;
+  color: $aqua;
+}
+
+.user-list__link:active .icon {
+  opacity: .3;
 }
