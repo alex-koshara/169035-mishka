@@ -18,8 +18,8 @@ function toggleMenu(e) {
 // POPUP
 var
     showPopUp = document.querySelector(".overlay--hidden"), // класс для скрытия попапа - удаляем
-    popUp = document.querySelector("#buy"), // кнопка попапа
-    hiddenPopUp = document.querySelector(".btn--popup"), // кнопка попапа
+    popUp = document.querySelector("#buy"), // кнопка попапа на странице
+    hiddenPopUp = document.querySelector(".btn--popup"), // кнопка попапа внутренняя
     modalPopup = document.querySelector(".modal-popup"); // cамо окно попапа
 
 if (popUp) {
