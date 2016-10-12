@@ -5,19 +5,25 @@
   list-style: none;
   @media #{$min-width-tablet} {
     display: flex;
-    flex-wrap: wrap;
+
+    width: 100%;
     margin-bottom: 25px;
+
+    flex-wrap: wrap;
   }
   @media #{$min-width-desktop} {
     flex-direction: column;
+
     margin-bottom: 50px;
   }
 }
 
 .communication__item {
   display: flex;
-  align-items: baseline;
+
   margin-bottom: 30px;
+
+  align-items: baseline;
   @media #{$min-width-tablet} {
     width: 50%;
   }
@@ -29,8 +35,10 @@
 .communication__title {
   width: 75px;
   margin-right: 3px;
-  @include font(15px, 30px);
+
   color: $text-secondary;
+
+  @include font(15px, 30px);
   @media #{$min-width-tablet} {
     font-size: 17px;
   }
@@ -38,12 +46,13 @@
 
 .communication__link {
   display: inline-block;
-  @include font(15px, 30px);
 
   text-decoration: none;
 
   color: $text-secondary;
   border-bottom: 1px solid $aqua;
+
+  @include font(15px, 30px);
   &:hover {
     color: $aqua;
   }
@@ -57,8 +66,9 @@
 }
 
 .communication__description {
-  @include font(15px, 30px);
   color: $text-secondary;
+
+  @include font(15px, 30px);
   @media #{$min-width-tablet} {
     font-size: 17px;
   }

@@ -31,7 +31,6 @@
   &.btn--small {
     width: 192px;
     margin: 0 auto;
-
     @media #{$min-width-tablet} {
       width: 585px;
     }
@@ -42,23 +41,25 @@
   }
   &.btn--form {
     @media #{$min-width-tablet} {
-      order: -1;
-      margin: 0;
       width: 230px;
+      margin: 0;
+      margin-top: 5px;
+
+      order: -1;
     }
   }
   &.btn--presentation {
     width: 100%;
   }
   &.btn--popup {
+    color: $white;
     background: $aqua;
     background-color: $aqua;
-    color: $white;
     &:hover,
     &:focus {
       color: $aqua;
-      background: $white;
       border-color: $aqua;
+      background: $white;
     }
     &:active {
       color: $aqua-light;

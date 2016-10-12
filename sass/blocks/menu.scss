@@ -18,19 +18,23 @@
 .menu__link {
   position: relative;
 
-  display: block;
+  display: flex;
 
-  padding: 24px 130px 30px 30px;
+  min-height: 103px;
+  padding: 25px 30px 15px 30px;
 
   text-decoration: none;
 
   color: $white;
+
+  justify-content: space-between;
   @media #{$min-width-tablet} {
     width: 50%;
-    padding: 25px 120px 30px 35px;
+    min-height: 121px;
+    padding: 28px 35px 30px 35px;
   }
   @media #{$min-width-desktop} {
-    padding: 27px 310px 30px 35px;
+    padding: 27px 35px 30px 35px;
   }
   &:hover {
     transform: translateY(-5px);
@@ -40,16 +44,31 @@
   }
   &--aqua {
     background: $aqua;
-    box-shadow: $aqua;
     &:hover {
       box-shadow: 0 5px $aqua;
     }
   }
   &--light-aqua {
     background: $aqua-light;
-    box-shadow: $aqua-light;
     &:hover {
       box-shadow: 0 5px $aqua-light;
     }
   }
+}
+
+.menu__link .icon {
+  opacity: .5;
+  color: $decoration-color;
+}
+
+.menu__text {
+  width: 130px;
+}
+
+.menu__link:hover .icon {
+  opacity: .7;
+}
+
+.menu__link:active .icon {
+  opacity: .3;
 }

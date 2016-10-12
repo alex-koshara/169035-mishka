@@ -4,11 +4,13 @@
   min-height: 255px;
   margin-bottom: 30px;
   @media #{$min-width-tablet} {
-    min-height: 314px;
-    margin-bottom: 80px;
+    margin-bottom: 84px;
+    &::after {
+      @include bg-zigzag;
+    }
   }
   @media #{$min-width-desktop} {
-    margin-bottom: 130px;
+    margin-bottom: 132px;
   }
   &.page-header--form {
     margin-bottom: 25px;
@@ -16,7 +18,9 @@
   &.page-header--index {
     margin-bottom: 28px;
     @media #{$min-width-tablet} {
-      margin-bottom: 47px;
+      position: relative;
+
+      margin-bottom: 45px;
     }
   }
 }
@@ -48,6 +52,5 @@
     border-top: 1px solid $light-grey;
   }
   @media #{$min-width-tablet} {
-    min-height: 225px;
   }
 }

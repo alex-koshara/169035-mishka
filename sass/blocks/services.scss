@@ -22,6 +22,12 @@
   text-decoration: none;
 
   color: $text-primary;
+  &:hover {
+    opacity: .6;
+  }
+  &:active {
+    opacity: .3;
+  }
   @media #{$min-width-desktop} {
     font-weight: bold;
 

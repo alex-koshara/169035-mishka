@@ -94,16 +94,18 @@
     justify-content: center;
     align-items: center;
     @media #{$min-width-tablet} {
-      padding: 0 50px;
+      padding: 6px 50px 0;
 
       background: $white;
 
+      justify-content: flex-start;
       order: 1;
       flex-grow: 1;
     }
     @media #{$min-width-desktop} {
       width: auto;
       margin: auto;
+      padding: 8px 0 0 8px;
     }
   }
 }

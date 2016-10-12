@@ -2,9 +2,9 @@
   font-weight: bold;
 
   margin-bottom: 50px;
-  padding-top: 35px;
+  padding-top: 23px;
   @media #{$min-width-tablet} {
-    padding-top: 83px;
+    padding-top: 51px;
   }
   @media #{$min-width-desktop} {
     padding-top: 65px;
@@ -44,6 +44,8 @@
 }
 
 .about__item {
+  position: relative;
+
   padding-top: 81px;
   @media #{$min-width-tablet} {
     width: 50%;
@@ -61,6 +63,39 @@
     &.about__item--count-3,
     &.about__item--count-6 {
       order: 4;
+    }
+  }
+}
+
+.about__item .icon {
+  position: absolute;
+  top: 26px;
+  left: 0;
+
+  color: $aqua;
+  &.icon--feature-3 {
+    top: 30px;
+    @media #{$min-width-tablet} {
+      top: 34px;
+      left: 2px;
+    }
+  }
+  &.icon--feature-4 {
+    top: 28px;
+    left: -1px;
+  }
+  &.icon--feature-5 {
+    top: 28px;
+    left: -10px;
+    @media #{$min-width-tablet} {
+      top: 32px;
+      left: -6px;
+    }
+  }
+  &.icon--feature-6 {
+    @media #{$min-width-tablet} {
+      top: 30px;
+      left: 1px;
     }
   }
 }

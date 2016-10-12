@@ -5,22 +5,29 @@
   <title>Вязание на заказ</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/pictureFill.min.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </head>
 <body>
   <header class="page-header  page-header--form">
     <div class="page-header__top">
 
-      <nav class="main-nav">
+      <nav class="main-nav  main-nav--nojs">
         <button type="button" class="hamburger  main_nav__open"  id="hamburger"></button>
 
         <div class="main-nav__group main-nav__group--logo">
           <a href="index.html" class="logo">
-            <img src="" alt="logo" class="logo__img">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="logo" class="logo__img" width="86" height="35">
+            </picture>
           </a>
         </div>
 
         <div class="main-nav__group main-nav__group--common">
-          <section class="nav-list  nav-list--nojs">
+          <section class="nav-list">
             <a href="catalog.html" class="nav-list__link">Каталог товаров</a>
 
             <a class="nav-list__link  nav-list__link--active">Вязание на&nbsp;заказ</a>
@@ -28,10 +35,18 @@
         </div>
 
         <div class="main-nav__group main-nav__group--user">
-          <section class="user-list  user-list--nojs">
-            <a href="#" class="user-list__link  user-list__link--search">Поиск по&nbsp;сайту</a>
+          <section class="user-list">
+            <a href="#" class="user-list__link  user-list__link--search">
+            <svg class="icon  icon--nav  icon--search" width="19" height="19">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#icon-search"></use>
+            </svg>
+            Поиск по&nbsp;сайту</a>
 
-            <a href="#" class="user-list__link  user-list__link--basket">Корзина: пока пуста</a>
+            <a href="#" class="user-list__link  user-list__link--basket">
+            <svg class="icon  icon--nav  icon-cart" width="21" height="19">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#icon-cart"></use>
+            </svg>
+            Корзина: пока пуста</a>
           </section>
         </div>
 
@@ -56,7 +71,7 @@
 
   <main class="main">
     <section class="callback">
-      <form class="callback-form" action="" method="post">
+      <form class="callback-form" method="post">
         <p class="callback-form__description  callback-form__flex  callback-form__flex--center  container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
         <fieldset class="callback-form__group">
           <div class="callback-form__flex  container">
@@ -129,17 +144,17 @@
             <div class="callback-form__flex-inner">
               <label class="callback-form__full-name  input">
                 <span class="input__title">Имя:</span>
-                <input type="text" name="first-name" class="input__control" placeholder="Введите ваше имя">
+                <input type="text" name="first-name" class="input__control" placeholder="Введите ваше имя"  required>
               </label>
 
               <label class="callback-form__full-name  input">
                 <span class="input__title">Фамилия:</span>
-                <input type="text" name="last-name" class="input__control" placeholder="Укажите фамилию">
+                <input type="text" name="last-name" class="input__control" placeholder="Укажите фамилию" required>
               </label>
 
               <label class="callback-form__full-name  input">
                 <span class="input__title">Отчество:</span>
-                <input type="text" name="second-name" class="input__control" placeholder="Отчество, если желаете">
+                <input type="text" name="second-name" class="input__control" placeholder="Отчество, если желаете" required>
               </label>
             </div>
           </div>
@@ -150,8 +165,11 @@
             <legend class="callback-form__title  callback-form__title--single">Тел</legend>
 
             <div class="callback-form__flex-inner">
-              <label class="callback-form__tel-label  input  input--tel">
-                <input type="tel" name="telephone" class="input__control" placeholder="+7 XXX XX XX">
+              <label class="callback-form__tel-label  input  input--contacts  input--tel">
+                <input type="text" name="telephone" class="input__control" placeholder="+7 XXX XX XX" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"    required>
+                <svg class="icon  icon--phone  icon--contacts" width="25" height="24">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#icon-phone"></use>
+                </svg>
               </label>
             </div>
           </div>
@@ -162,8 +180,11 @@
             <legend class="callback-form__title  callback-form__title--single">E-mail</legend>
 
             <div class="callback-form__flex-inner">
-              <label  class="callback-form__email-label  input  input--email">
-                <input type="email" name="email" class="input__control" placeholder="Ваш Email">
+              <label  class="callback-form__email-label  input  input--contacts  input--email">
+                <input type="email" name="email" class="input__control" placeholder="Ваш Email" required>
+                <svg class="icon  icon--mail  icon--contacts" width="32" height="32">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#icon-mail"></use>
+                </svg>
               </label>
             </div>
           </div>
@@ -174,7 +195,7 @@
             <legend class="callback-form__title  callback-form__title--textarea">Доп</legend>
 
             <div class="callback-form__flex-inner">
-              <textarea class="textarea" name="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="textarea" name="additional" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
             </div>
           </div>
         </fieldset>
@@ -190,19 +211,37 @@
 
   <footer class="page-footer">
     <div class="page-footer__inner container">
-      <a href="index.html" class="logo logo--undecor">
-        <img src="" alt="logo" class="logo__img logo__img--undecor">
+      <a href="index.html" class="logo logo--footer">
+        <svg class="icon  icon--logo" width="103" height="40">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#logo-footer"></use>
+        </svg>
       </a>
       <section class="social">
-        <a href="#" class="social__link  icon  icon--instagram">Ин</a>
-        <a href="#" class="social__link  icon  icon--faceboock">Фе</a>
-        <a href="#" class="social__link  icon  icon--twitter">Тв</a>
+        <a href="#" class="social__link">
+          <svg class="icon  icon--social" width="22" height="22">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#icon-insta"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="social__link">
+          <svg class="icon  icon--social" width="15" height="28">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#icon-fb"></use>
+          </svg>
+        </a>
+
+        <a href="#" class="social__link">
+          <svg class="icon  icon--social" width="24" height="20">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
       </section>
 
-      <section class="copyright">
+      <a href="https://htmlacademy.ru" class="copyright">
         <b class="copyright__text">Разработано</b>
-        <a href="#" class="copyright__link">HT</a>
-      </section>
+        <svg class="icon  icon--academy" width="28" height="35">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#logo-htmlacademy"></use>
+        </svg>
+      </a>
     </div>  <!-- end page-footer__inner -->
   </footer>
   <script type="text/javascript" src="js/main.js"></script>

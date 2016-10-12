@@ -1,13 +1,37 @@
 .social {
   display: flex;
 
-  padding: 25px;
+  margin-bottom: 12px;
+  padding: 2px 0 27px 16px;
 
   border-bottom: 1px solid $dark-grey;
 
-  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-start;
+  @media #{$min-width-tablet} {
+    padding: 15px 0 27px 38px;
+
+    border: none;
+  }
+  @media #{$min-width-desktop} {
+    margin-left: 36px;
+    padding: 10px 0 27px 0;
+
+    justify-content: space-around;
+  }
 }
 
 .social__link {
+  margin-left: 41px;
+
+  cursor: pointer;
   text-decoration: none;
+
+  color: $text-primary;
+  &:hover {
+    color: $aqua;
+  }
+  &:active {
+    opacity: .3;
+  }
 }

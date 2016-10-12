@@ -1,6 +1,8 @@
 .user {
   font-style: normal;
+
   display: block;
+
   margin-bottom: 29px;
   @media #{$min-width-tablet} {
     width: 50%;
@@ -10,7 +12,9 @@
 
 .user__name {
   font-weight: bold;
+
   display: block;
+
   margin-bottom: 3px;
 
   @include font(18px, 24px);

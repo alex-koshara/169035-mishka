@@ -2,12 +2,14 @@
   font-weight: bold;
 
   display: flex;
-
   width: 100%;
   margin-bottom: 13px;
 
+  cursor: pointer;
+
   align-items: flex-start;
   @media #{$min-width-tablet} {
+    width: 70%;
     margin-bottom: 24px;
     &:last-child {
       margin-bottom: 0;
@@ -36,7 +38,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     display: block;
 
@@ -45,6 +46,7 @@
 
     content: '';
     transition: opacity .3s linear;
+    transform: translate(-50%, -50%);
 
     opacity: 0;
     border-radius: 50%;

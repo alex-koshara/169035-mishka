@@ -1,5 +1,6 @@
 .controls {
   display: flex;
+
   margin-bottom: 38px;
   @media #{$min-width-tablet} {
     width: 167px;
@@ -7,8 +8,27 @@
 }
 
 .controls__btn {
+  display: flex;
+
   width: 50%;
-  border: 1px solid $grey;
   height: 52px;
   margin: auto;
+  padding-top: 1px;
+  @media #{$mobile-width-only} {
+    border: 1px solid $grey;
+  }
+  &:hover {
+    opacity: .6;
+  }
+  &:active {
+    opacity: .3;
+  }
+}
+
+.controls__btn  .icon {
+  margin: auto;
+}
+
+.controls__prev {
+  padding-right: 5px;
 }
