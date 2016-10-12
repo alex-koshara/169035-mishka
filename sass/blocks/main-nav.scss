@@ -30,6 +30,13 @@
   }
 }
 
+.main-nav__open.hamburger {
+  position: absolute;
+  z-index: 5;
+  top: 32px;
+  right: 32px;
+}
+
 .main-nav__group {
   &.main-nav__group--common {
     @media #{$min-width-tablet} {
