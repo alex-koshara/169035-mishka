@@ -1,3 +1,8 @@
+<b>Для просмотра:</b>
+<h1> npm i </h1>
+<h1> npm start </h1>
+<br><br><br><br><br>
+
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Кошара](https://up.htmlacademy.ru/adaptive/8/user/169035).
