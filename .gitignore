@@ -2,12 +2,8 @@
 .idea
 *.ai
 *.log
-icons.svg
-symbols.svg
 *.pdf
 *.psd
 *.sublime*
-build/
-css/*.css
 node_modules/
 Thumbs.db
